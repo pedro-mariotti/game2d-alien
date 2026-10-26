@@ -1,5 +1,9 @@
 import pytest
-from src.desconto import DescontoNormal, DescontoVIP, DescontoPremium
+from src.desconto import IDesconto, DescontoNormal, DescontoVIP, DescontoPremium
+
+class StubSemDesconto(IDesconto):
+    def calcular(self, valor):
+        return 0
 
 @pytest.mark.parametrize("valor, esperado", [
     (100, 30),
