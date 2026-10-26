@@ -3,5 +3,6 @@ MonkeyType>=23.3.0
 pygame-ce>=2.5.8
 ruff>=0.16.3
 pytest
+pytest-html
 pytest-mock
-coverage
+cover
